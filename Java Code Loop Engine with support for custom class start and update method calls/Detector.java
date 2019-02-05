@@ -8,7 +8,7 @@ import org.apache.commons.io.filefilter.WildcardFileFilter;
 public class Detector {
 
     public ClassesWrapper[] getClasses() throws ClassNotFoundException, InstantiationException, IllegalAccessException{
-        String pathName = "/out/production/Just Some BS/com/twisty/StartFiles/";
+        String pathName = "/StartFiles/";
         File folder = new File("." + pathName);
         FileFilter fileFilter = new WildcardFileFilter("*.class");
         File[] listOfFiles = folder.listFiles(fileFilter);
